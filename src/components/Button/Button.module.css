@@ -1,6 +1,10 @@
 .btn{
     cursor: pointer;
-    color: var(--color-success);
+    color: var(--color-primary);
+    /* color: rgba(52, 201, 75, 1);
+    background: #34C94B; */
+
+
     background-color: var(--color-black);
     outline: none;
     border-radius: 12px;
