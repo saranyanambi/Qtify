@@ -1,6 +1,6 @@
 .btn{
     cursor: pointer;
-    color: var(--color-primary);
+    color: var(rgba(52, 201, 75, 1));
     /* color: rgba(52, 201, 75, 1);
     background: #34C94B; */
 
