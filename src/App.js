@@ -24,6 +24,7 @@ function App() {
       </header> */}
     
     <Button label="Give Feedback" />
+    <Hero/>
    
    
 
