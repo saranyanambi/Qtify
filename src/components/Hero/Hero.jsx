@@ -1,18 +1,16 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import hero from "../../assets/hero.png"
 
 function Hero() {
   return (
     <div className={styles.hero}>
-      <div>
+      <div className={styles.heroText}>
         <h1>100 Thousand Songs, ad-free</h1>
         <h1>Over thousands podcast episodes</h1>
       </div>
       <div>
         <img
-        //   src={require("../../assets/hero_headphones.png")}
-        src={hero}
+          src={require("../../assets/hero_headphones.png")}
           width={212}
           alt="headphones"
         />

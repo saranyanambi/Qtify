@@ -23,8 +23,11 @@ function App() {
         </a>
       </header> */}
     
-    <Button label="Give Feedback" />
+   
+    <Router>
+    <Navbar searchData={[]}/>
     <Hero/>
+    </Router>
    
    
 
