@@ -23,11 +23,15 @@ function App() {
         </a>
       </header> */}
     
-   
+    
     <Router>
+      
     <Navbar searchData={[]}/>
-    <Hero/>
+   
+   
     </Router>
+    <Hero/>
+    {/* <Hero/> */}
    
    
 
