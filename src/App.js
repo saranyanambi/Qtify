@@ -11,7 +11,7 @@ function App() {
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/App.js</code> and save to
         </p>
         <a
           className="App-link"
@@ -25,13 +25,7 @@ function App() {
     
     <Button label="Give Feedback" />
    
-    <Router>
-      <Navbar searchData={searchData} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* other routes */}
-      </Routes>
-    </Router>
+   
 
     </div>
   );
