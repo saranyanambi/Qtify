@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import  Button  from './components/Button/Button';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import  Card  from './components/Card/Card'
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
     </Router>
     <Hero/>
     {/* <Hero/> */}
+    <Card/>
    
    
 
