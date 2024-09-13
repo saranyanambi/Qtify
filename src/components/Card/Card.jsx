@@ -9,26 +9,31 @@ import CardActions from '@mui/material/CardActions';
 import Chip from '@mui/material/Chip';
 import styles from './Card.module.css';
 
-export default function Cardcomponent() {
+const CardComponent = ({album}) => {
+  console.log(album)
+  const { title, image: imageAlbum, id, follows, likes } = album;
   return (
     <>
-    <Card sx={{ maxWidth: 200 }} className={styles.card}>
-      <CardActionArea>
+    <Card className={styles.card}>
+      
         <CardMedia
           component="img"
-          height="200"
-          image="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"
+          height="150"
+          image={imageAlbum}
           alt="green iguana"
-         
+          title={title}
+          className={styles.cardmedia}
         />
-           <div style={{ padding: '4px 8px', borderRadius: '0px 0px 10px 10px', backgroundColor: '#fff'}} >
-        <Chip label="100ms"  variant="outlined" style={{ backgroundColor: 'var(--color-black)', color: '#fff'}} />
-      </div> 
+           <div className={styles.chip}>
+                <Chip label={ follows ? `${follows} Follows` : `${likes} Likes` }   variant="outlined" style={{ backgroundColor: 'var(--color-black)', color: '#fff'}} />
+           </div> 
       <CardContent style={{ padding: '2px'}}>
-        <Typography variant="p" component="div" style={{ color: '#fff', fontWeight: '400', fontSize: '14px', lineHeight: '21px' }}>text</Typography>
+        <Typography variant="p" component="div" style={{ color: 'white', fontWeight: '400', fontSize: '14px', lineHeight: '21px' }}>{title}</Typography>
       </CardContent>
-      </CardActionArea>
+      
     </Card>
     </>
   );
 }
+
+export default CardComponent;
