@@ -7,9 +7,9 @@ import Carousel from '../Carousel/Carousel';
 import CardComponent from '../Card/Card';
 import styles from './songs.module.css'
 
-export default function Songs() {
+const Songs=({title}) =>{
   
-     const [genres,setGeneres]=React.useState([]);   
+     const [genres,setGeneres]=useState([]);   
      const [song,setSong]=useState([]);
      const [filtersongs,setFiltersongs]=useState([]);
      const [selectgenre,setSelectedgenre]=useState("All")
@@ -56,7 +56,7 @@ export default function Songs() {
     <Box className={styles.songSection}>
 
         <div className={styles.songTitle}>
-            <h3>Songs</h3>
+            <h3>{title}</h3>
         </div>
     
         <Box sx={{ borderBottom: 1, borderColor: 'divider' }} >
@@ -84,3 +84,4 @@ export default function Songs() {
 }
 
 
+export default Songs
