@@ -4,13 +4,13 @@
 
 }
 
-.songSection{
+.sectionContainer{
     height: auto;
     color: #fff;
     padding: 16px;
     background-color: black;
 }
-.songTitle{
+.sectionTitle{
     display: flex;
     align-items: center;
     justify-content: space-between;
