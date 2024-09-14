@@ -1,0 +1,19 @@
+:root {
+    --color-primary: rgba(52, 201, 75, 1); /* Example green color */
+    --color-black:black;
+
+}
+
+.songSection{
+    height: auto;
+    color: #fff;
+    padding: 16px;
+    background-color: black;
+}
+.songTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
