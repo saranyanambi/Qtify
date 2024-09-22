@@ -11,7 +11,7 @@ import styles from './Card.module.css';
 
 const CardComponent = ({album}) => {
   // console.log(album)
-  const { title, image: imageAlbum, id, follows, likes } = album;
+  const { title, image, id, follows, likes } = album;
     // console.log(imageAlbum);
   return (
     <>
@@ -20,7 +20,7 @@ const CardComponent = ({album}) => {
         <CardMedia
           component="img"
           height="150"
-          image={imageAlbum}
+          image={image}
           alt="green iguana"
           title={title}
           className={styles.cardmedia}
