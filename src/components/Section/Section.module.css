@@ -8,6 +8,7 @@
     color: #fff;
     padding: 16px;
     background-color: black;
+    
 }
 .sectionTitle
 {
@@ -20,7 +21,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Defines a maximum of 6 columns */
-    gap: 3rem; /* Spacing between cards */
+    gap: 0.5rem; /* Spacing between cards */
     margin-top: 0px; /* Ensuring proper vertical spacing between title and grid */
     background-color: black;
 }

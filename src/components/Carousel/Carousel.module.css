@@ -1,6 +1,6 @@
 .carouselContainer {
     position: relative;
-    width: 1408px !important;
+    width: 100vw !important;
 }
 
 .swiperContainer {

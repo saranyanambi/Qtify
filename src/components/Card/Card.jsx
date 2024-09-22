@@ -12,6 +12,7 @@ import styles from './Card.module.css';
 const CardComponent = ({album}) => {
   // console.log(album)
   const { title, image: imageAlbum, id, follows, likes } = album;
+    // console.log(imageAlbum);
   return (
     <>
     <Card className={styles.card}>
