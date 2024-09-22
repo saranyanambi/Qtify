@@ -14,12 +14,7 @@ const Section = ({ title, apiEndpoint, showAllButton = true }) => {
     useEffect(() => {
         const fetchTopAlbums = async () => {
             try {
-                const response = await axios.get(apiEndpoint, {
-                    headers: {
-                        'Access-Control-Allow-Origin': '*',
-                        'Content-Type': 'application/json'
-                    }
-                });
+                const response = await axios.get(apiEndpoint)
                 setTopAlbums(response.data); // Use response.data to get the data from the response
             } catch (error) {
                 console.error(`Error fetching ${title}:`, error);

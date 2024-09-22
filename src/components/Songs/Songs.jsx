@@ -105,18 +105,8 @@ const Songs = ({title}) => {
   useEffect(() => {
     const fetchSongsAndGenres = async () => {
       try {
-        const songsResponse = await axios.get('https://qtify-backend-labs.crio.do/songs',{
-          headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json'
-          }
-        });
-        const genresResponse = await axios.get('https://qtify-backend-labs.crio.do/genres',{
-          headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json'
-          }
-        });
+        const songsResponse = await axios.get('https://qtify-backend-labs.crio.do/songs');
+        const genresResponse = await axios.get('https://qtify-backend-labs.crio.do/genres');
         console.log(songsResponse.data)
         setSongs(songsResponse.data);
         setGenres(['All', ...genresResponse.data.data]); // Add "All" to the beginning of the genres list
